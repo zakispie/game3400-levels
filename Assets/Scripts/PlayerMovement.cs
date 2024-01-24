@@ -73,8 +73,6 @@ public class PlayerMovement : MonoBehaviour
             Invoke(nameof(JumpCooldownReset), jumpCooldown);
         }
 
-        //Jump();
-
         if (isGrounded)
             rb.AddForce(moveDirection.normalized * playerSpeed, ForceMode.Force);
 
