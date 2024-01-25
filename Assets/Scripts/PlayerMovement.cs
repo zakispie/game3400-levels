@@ -40,8 +40,6 @@ public class PlayerMovement : MonoBehaviour
 
         moveDirection = direction.forward * yInput + direction.right * xInput;
 
-        rb.AddForce(moveDirection.normalized * playerSpeed, ForceMode.Force);
-
         //check if grounded
         isGrounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.2f, ground);
 
@@ -53,6 +51,14 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.drag = 0;
         }
+
+
+        if (isGrounded)
+            rb.AddForce(moveDirection.normalized * (playerSpeed * Time.deltaTime), ForceMode.VelocityChange);
+
+        // in air
+        else if (!isGrounded)
+            rb.AddForce(moveDirection.normalized * (playerSpeed * airMultiplier * Time.deltaTime), ForceMode.VelocityChange);
 
         var velocity = rb.velocity;
         Vector3 playerVelocity = new Vector3(velocity.x, 0f, velocity.z);
@@ -73,13 +79,6 @@ public class PlayerMovement : MonoBehaviour
 
             Invoke(nameof(JumpCooldownReset), jumpCooldown);
         }
-
-        if (isGrounded)
-            rb.AddForce(moveDirection.normalized * (playerSpeed * Time.deltaTime), ForceMode.VelocityChange);
-
-        // in air
-        else if (!isGrounded)
-            rb.AddForce(moveDirection.normalized * (playerSpeed * airMultiplier * Time.deltaTime), ForceMode.VelocityChange);
     }
 
     void Jump()

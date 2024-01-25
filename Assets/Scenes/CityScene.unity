@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028331, g: 0.2257133, b: 0.3069217, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2463,7 +2463,7 @@ GameObject:
   - component: {fileID: 144842259}
   - component: {fileID: 144842258}
   - component: {fileID: 144842257}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2883,7 +2883,7 @@ GameObject:
   - component: {fileID: 166707943}
   - component: {fileID: 166707942}
   - component: {fileID: 166707941}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Knob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3720,7 +3720,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 218900954}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LawnChair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6208,7 +6208,7 @@ GameObject:
   - component: {fileID: 325843485}
   - component: {fileID: 325843484}
   - component: {fileID: 325843483}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chair (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6733,7 +6733,7 @@ GameObject:
   - component: {fileID: 368796442}
   - component: {fileID: 368796441}
   - component: {fileID: 368796440}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7680,7 +7680,7 @@ GameObject:
   - component: {fileID: 410790424}
   - component: {fileID: 410790423}
   - component: {fileID: 410790422}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10557,7 +10557,7 @@ GameObject:
   - component: {fileID: 542078286}
   - component: {fileID: 542078285}
   - component: {fileID: 542078284}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Knob
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -11395,7 +11395,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 564657099}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: LawnChair (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13466,7 +13466,7 @@ GameObject:
   - component: {fileID: 653458402}
   - component: {fileID: 653458401}
   - component: {fileID: 653458400}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HatchLocked
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14624,7 +14624,7 @@ GameObject:
   - component: {fileID: 689949186}
   - component: {fileID: 689949185}
   - component: {fileID: 689949184}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chair (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18303,7 +18303,7 @@ GameObject:
   - component: {fileID: 857684224}
   - component: {fileID: 857684223}
   - component: {fileID: 857684222}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -18825,7 +18825,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 879633882}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: TrashCan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19704,7 +19704,7 @@ GameObject:
   - component: {fileID: 928523722}
   - component: {fileID: 928523721}
   - component: {fileID: 928523720}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Lid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -24929,7 +24929,7 @@ GameObject:
   - component: {fileID: 1143539399}
   - component: {fileID: 1143539398}
   - component: {fileID: 1143539397}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -25034,7 +25034,7 @@ GameObject:
   - component: {fileID: 1147965879}
   - component: {fileID: 1147965878}
   - component: {fileID: 1147965877}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -39673,7 +39673,7 @@ GameObject:
   - component: {fileID: 1888235320}
   - component: {fileID: 1888235319}
   - component: {fileID: 1888235318}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Can
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40830,7 +40830,7 @@ GameObject:
   - component: {fileID: 1941433865}
   - component: {fileID: 1941433864}
   - component: {fileID: 1941433863}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Grass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40939,7 +40939,7 @@ GameObject:
   - component: {fileID: 1946421173}
   - component: {fileID: 1946421172}
   - component: {fileID: 1946421171}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: HatchLocked (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -45600,9 +45600,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3933479491193550993, guid: ee08f3711546c7947b5e59d0dbe42414,
         type: 3}
+      propertyPath: jumpForce
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933479491193550993, guid: ee08f3711546c7947b5e59d0dbe42414,
+        type: 3}
       propertyPath: respawnPos
       value: 
       objectReference: {fileID: 1083645926}
+    - target: {fileID: 3933479491193550993, guid: ee08f3711546c7947b5e59d0dbe42414,
+        type: 3}
+      propertyPath: playerSpeed
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 3933479491193550993, guid: ee08f3711546c7947b5e59d0dbe42414,
+        type: 3}
+      propertyPath: airMultiplier
+      value: 0.15
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
