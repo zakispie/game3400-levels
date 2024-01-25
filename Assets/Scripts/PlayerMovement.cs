@@ -54,7 +54,8 @@ public class PlayerMovement : MonoBehaviour
             rb.drag = 0;
         }
 
-        Vector3 playerVelocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        var velocity = rb.velocity;
+        Vector3 playerVelocity = new Vector3(velocity.x, 0f, velocity.z);
 
         // limit velocity if needed
         if (playerVelocity.magnitude > playerSpeed)
@@ -74,16 +75,18 @@ public class PlayerMovement : MonoBehaviour
         }
 
         if (isGrounded)
-            rb.AddForce(moveDirection.normalized * playerSpeed, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * (playerSpeed * Time.deltaTime), ForceMode.VelocityChange);
 
         // in air
         else if (!isGrounded)
-            rb.AddForce(moveDirection.normalized * playerSpeed * airMultiplier, ForceMode.Force);
+            rb.AddForce(moveDirection.normalized * (playerSpeed * airMultiplier * Time.deltaTime), ForceMode.VelocityChange);
     }
 
     void Jump()
     {
-        rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        var velocity = rb.velocity;
+        velocity = new Vector3(velocity.x, 0f, velocity.z);
+        rb.velocity = velocity;
 
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
     }
@@ -95,7 +98,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "orb")
+        if(other.gameObject.CompareTag("orb"))
         {
             Debug.Log("orb");
             Destroy(other.gameObject);
@@ -104,7 +107,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "death")
+        if(collision.gameObject.CompareTag("death"))
         {
             Debug.Log("death");
             transform.position = respawnPos.position;
