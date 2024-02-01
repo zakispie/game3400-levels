@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Jumpscare : MonoBehaviour
 {
+    [SerializeField] AudioClip ScreamSFX;
     [SerializeField] GameObject TVGhost;
     [SerializeField] GameObject ChairGhost;
     [SerializeField] GameObject BookGhost;
@@ -11,45 +12,44 @@ public class Jumpscare : MonoBehaviour
     [SerializeField] GameObject PaintGhost;
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag == "TVGhost")
+        if(other.gameObject.CompareTag("TVGhost"))
         {
             TVGhost.SetActive(true);
             TVGhost.gameObject.GetComponent<Animator>().Play("jumpscare");
 
-            //insert scream sound below
+            AudioSource.PlayClipAtPoint(ScreamSFX, PlayerController.Position);
 
         }
-        if (other.gameObject.tag == "ChairGhost")
+        if (other.gameObject.CompareTag("ChairGhost"))
         {
             ChairGhost.SetActive(true);
             ChairGhost.gameObject.GetComponent<Animator>().Play("jumpscare");
 
-            //insert scream sound here below
+            AudioSource.PlayClipAtPoint(ScreamSFX, PlayerController.Position);
 
         }
-        if (other.gameObject.tag == "BookGhost")
+        if (other.gameObject.CompareTag("BookGhost"))
         {
             BookGhost.SetActive(true);
             BookGhost.gameObject.GetComponent<Animator>().Play("jumpscare");
 
-            //insert scream sound here below
+            AudioSource.PlayClipAtPoint(ScreamSFX, PlayerController.Position);
 
         }
-        if (other.gameObject.tag == "ToyGhost")
+        if (other.gameObject.CompareTag("ToyGhost"))
         {
             ToyGhost.SetActive(true);
             ToyGhost.gameObject.GetComponent<Animator>().Play("jumpscare");
 
-            //insert scream sound here below
+            AudioSource.PlayClipAtPoint(ScreamSFX, PlayerController.Position);
 
         }
-        if (other.gameObject.tag == "PaintGhost")
+        if (other.gameObject.CompareTag("PaintGhost"))
         {
             PaintGhost.SetActive(true);
             PaintGhost.gameObject.GetComponent<Animator>().Play("jumpscare");
-
-            //insert scream sound here below
-
+            
+            AudioSource.PlayClipAtPoint(ScreamSFX, PlayerController.Position);
         }
     }
 }
