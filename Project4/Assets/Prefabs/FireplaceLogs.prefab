@@ -30,7 +30,7 @@ Transform:
   m_GameObject: {fileID: 908382065205427761}
   serializedVersion: 2
   m_LocalRotation: {x: 0.36345991, y: 0.3563803, z: -0.61459804, w: 0.602627}
-  m_LocalPosition: {x: -2.6062217, y: -0.47926214, z: 0.9479828}
+  m_LocalPosition: {x: -1.3587362, y: -0.47926214, z: 0.13151622}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -548,7 +548,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 1066
+  m_VersionIndex: 1069
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -593,7 +593,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 25a9fb42d361f46ad89221f6d301e96e, type: 2}
+  - {fileID: 2100000, guid: 8eda7e341b2d4f844a8753a2640321d2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -672,7 +672,7 @@ Transform:
   m_GameObject: {fileID: 1079791570622422724}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.443, y: 0.011, z: 0.97738266}
+  m_LocalPosition: {x: -1.1955146, y: -0.196, z: 0.195}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -690,8 +690,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
-  m_Range: 1
+  m_Intensity: 10
+  m_Range: 5
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -790,8 +790,8 @@ Transform:
   m_GameObject: {fileID: 3465934128425029835}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -2.4494858, y: -0.3850441, z: 0.9914665}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.202, y: -0.354, z: 0.193}
+  m_LocalScale: {x: 3.7436, y: 6.5254693, z: 8.772311}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3756769873633415802}
@@ -5619,7 +5619,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 9.578622, y: 0.43846214, z: -30.881382}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 15.673965, y: 15.673965, z: 15.673965}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1008952954089894236}
@@ -5659,7 +5659,7 @@ Transform:
   m_GameObject: {fileID: 8960220138120167322}
   serializedVersion: 2
   m_LocalRotation: {x: -0.6341507, y: -0.62179863, z: -0.32815674, w: 0.32176474}
-  m_LocalPosition: {x: -2.579722, y: -0.24614213, z: 0.97738266}
+  m_LocalPosition: {x: -1.3322364, y: -0.24614213, z: 0.16091609}
   m_LocalScale: {x: 0.85858, y: 0.85858, z: 0.85857993}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6177,7 +6177,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 1066
+  m_VersionIndex: 1069
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -6222,7 +6222,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 25a9fb42d361f46ad89221f6d301e96e, type: 2}
+  - {fileID: 2100000, guid: 8eda7e341b2d4f844a8753a2640321d2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6304,7 +6304,7 @@ Transform:
   m_GameObject: {fileID: 9189203555623400680}
   serializedVersion: 2
   m_LocalRotation: {x: 0.6269596, y: 0.61474764, z: 0.34169522, w: -0.3350394}
-  m_LocalPosition: {x: -2.6026006, y: -0.29753566, z: 1.0269699}
+  m_LocalPosition: {x: -1.355115, y: -0.29753566, z: 0.21050334}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6822,7 +6822,7 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 1066
+  m_VersionIndex: 1069
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
@@ -6867,7 +6867,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 25a9fb42d361f46ad89221f6d301e96e, type: 2}
+  - {fileID: 2100000, guid: 8eda7e341b2d4f844a8753a2640321d2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
