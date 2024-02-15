@@ -65,9 +65,6 @@ public class PlayerController : MonoBehaviour
     
     // Cache the mouse input as a 2D vector
     private Vector2 _mouseInput;
-    
-    // Cache the light component (flashlight)
-    private Light _flashlight;
 
     #endregion
 
@@ -83,7 +80,6 @@ public class PlayerController : MonoBehaviour
         _mouse = Mouse.current;
         _camera = Camera.main;
         _mouseInput = Vector2.zero;
-        _flashlight = GetComponentInChildren<Light>();
     }
 
     /// <summary>
@@ -95,11 +91,6 @@ public class PlayerController : MonoBehaviour
         _mouseInput = _mouse.delta.ReadValue() * (mouseSensitivity * Time.deltaTime);
         transform.Rotate(Vector3.up, _mouseInput.x);
         _camera.transform.Rotate(Vector3.right, -_mouseInput.y);
-        
-        if (_mouse.leftButton.wasPressedThisFrame)
-        {
-            _flashlight.enabled = !_flashlight.enabled;
-        }
 
         // Allow jump if player is grounded or has not performed double jump
         if (_keyboard.spaceKey.wasPressedThisFrame && (_isGrounded || _jumpCount < numJumps - 1))
