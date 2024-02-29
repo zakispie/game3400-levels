@@ -74,6 +74,12 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] Go go;
 
+    [SerializeField] GameObject xPressText;
+
+    [SerializeField] AudioSource sound;
+
+    private bool stopped_sound;
+
     #endregion
 
     /// <summary>
@@ -89,6 +95,7 @@ public class PlayerController : MonoBehaviour
         _mouseInput = Vector2.zero;
         _x_pressed = false;
         _done_fading = false;
+        stopped_sound = false;
     }
 
     /// <summary>
@@ -103,6 +110,7 @@ public class PlayerController : MonoBehaviour
 
         if (!_x_pressed && Input.GetKeyDown(KeyCode.X)) {
             _x_pressed = true;
+            Destroy(xPressText);
         }
 
         if (_x_pressed) {
@@ -121,6 +129,10 @@ public class PlayerController : MonoBehaviour
                 faderColor.a -= Time.deltaTime;
                 fader.color = faderColor;
                 scheduleChange.change();
+                if (!stopped_sound) {
+                    stopped_sound = true;
+                    sound.Stop();
+                }
                 go.go();
             }
         }
